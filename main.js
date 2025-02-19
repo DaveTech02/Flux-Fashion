@@ -56,11 +56,15 @@ let swiper = new Swiper(".swiper", {
 
 // Add Cart
 const Cart = document.querySelector('.Add')
-const button = document.querySelector('.add-to-cart')
+const button = document.querySelectorAll('.add-to-cart')
 
-let Add = 0
+let Add = 1
 
-    button.addEventListener('Click', () => {
-        Cart.innerHTML = Add++;
-    
+button.forEach( btn => {
+btn.addEventListener('click', () => {
+    Cart.innerHTML = Add++;
+
 })
+})
+
+    
