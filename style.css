@@ -1,11 +1,13 @@
-* {
+*,
+* ::after,
+* ::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   padding: 0;
-
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -14,21 +16,15 @@ body {
   font-family: Calibri;
   position: relative;
   .slide:nth-child(1) {
-    background-color: black;
-    background-blend-mode: overlay;
     animation-delay: -1s;
     background: url("pexels-criativithy-894081-1805411.jpg") center/cover
       no-repeat;
   }
   .slide:nth-child(2) {
-    background-color: black;
-    background-blend-mode: overlay;
     animation-delay: 4s;
     background: url("pexels-enginakyurt-19995389.jpg") center/cover no-repeat;
   }
   .slide:nth-child(3) {
-    background-color: black;
-    background-blend-mode: overlay;
     animation-delay: 8s;
     background: url("pexels-gabby-k-7691227.jpg") center/cover no-repeat;
   }
@@ -62,7 +58,7 @@ body {
 .slide {
   position: absolute;
   width: 100%;
-  height: 82vh;
+  height: 100vh;
   display: flex;
   float: left;
   padding-left: 1.5rem;
@@ -130,13 +126,14 @@ li :hover {
 
 .navbar #kloth {
   font-size: 2.5rem;
-  padding-left: 10rem;
+  padding-left: 8rem;
 }
 
 .navbar #Cart {
-  padding-left: 20rem;
+  padding-left: 15rem;
   position: fixed;
   top: 1.6rem;
+  z-index: 100;
 }
 
 .navbar .Add {
@@ -222,6 +219,7 @@ img {
 }
 
 .card {
+  align-items: center;
   border: 15px solid #e6e6e6;
   border-radius: 10px;
   padding: 3px;
@@ -247,17 +245,19 @@ img {
 }
 
 .card_price {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   color: #0b0b0b;
   line-height: 32px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .add-to-cart {
   background-color: #353432;
   color: #eee;
   border: none;
-  padding: 10px 15px;
+  padding: 7px 10px;
   margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -335,7 +335,7 @@ body.showCart .cartTab {
 
 /* Section 2 */
 
-.section2 {
+#section2 {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-rows: auto;
@@ -549,7 +549,7 @@ p {
   text-align: center;
   border-radius: 10px;
   border: 1px solid rgba(68, 67, 67, 0.623);
-  width: 50px;
+  width: 70px;
 }
 
 .box2 {
@@ -558,7 +558,7 @@ p {
   text-align: center;
   border-radius: 10px;
   border: 1px solid rgba(68, 67, 67, 0.623);
-  width: 50px;
+  width: 70px;
 }
 
 .box3 {
@@ -567,7 +567,7 @@ p {
   text-align: center;
   border-radius: 10px;
   border: 1px solid rgba(68, 67, 67, 0.623);
-  width: 50px;
+  width: 70px;
 }
 
 .box4 {
@@ -576,7 +576,7 @@ p {
   text-align: center;
   border-radius: 10px;
   border: 1px solid rgba(68, 67, 67, 0.623);
-  width: 50px;
+  width: 70px;
 }
 
 .btn1 {
@@ -727,71 +727,6 @@ footer {
   color: orange;
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-
-  .slide {
-    height: 60vh; /* Reduce slide height */
-    font-size: 2rem; /* Adjust font size for text */
-    padding-top: 5rem; /* Adjust padding for proper alignment */
-  }
-
-  .filterable_cards {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Reduce columns to fit smaller screens */
-    gap: 10px; /* Adjust gap between cards */
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .navbar #kloth {
-    font-size: 2rem; /* Adjust font size of navbar title */
-    padding-left: 5rem; /* Adjust spacing */
-  }
-
-  .navbar #Cart {
-    padding-left: 10rem;
-    top: 1rem; /* Adjust position */
-  }
-
-  .right-box {
-    padding-left: 20px; /* Reduce padding */
-    text-align: center; /* Center-align content */
-  }
-
-  .right-box h2 {
-    font-size: 36px; /* Reduce font size */
-    line-height: 48px;
-  }
-
-  .right-box p {
-    font-size: 14px; /* Adjust paragraph font size */
-    line-height: 22px;
-  }
-
-  .filter_buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Adjust gap between buttons */
-  }
-
-  .main {
-    flex-direction: column; /* Adjust layout for smaller screens */
-    padding-left: 0; /* Remove extra padding */
-  }
-
-  footer {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* Adjust footer grid for smaller screens */
-    padding: 1rem; /* Adjust padding */
-  }
 }
 
 @media screen and (max-width: 768px) {
