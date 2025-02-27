@@ -721,7 +721,7 @@ footer {
 }
 
 .ind:hover {
-  /* background-color: black; */
+  background-color: black;
   border: 2px orange solid;
   cursor: pointer;
   transition: 0.5s;
@@ -760,100 +760,6 @@ footer {
   color: orange;
   display: flex;
   justify-content: center;
-}
-
-/* Other shops */
-
-#Can {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  background-color: rgba(255, 166, 0, 0.404);
-}
-
-.cans {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  font-family: Calibri;
-  padding-top: 3rem;
-  font-size: 2rem;
-}
-
-#Can .lol {
-  margin-top: 2rem;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: white;
-  border: 2px solid orange;
-}
-
-#Can .lol:hover {
-  background-color: orange;
-  transition: 1.5s;
-  border: 2.5px solid white;
-}
-
-.cans button {
-  margin-top: 0.5rem;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid orange;
-  background-color: white;
-}
-
-.cans img {
-  width: 300px;
-  height: 370px;
-  margin-top: 1.3rem;
-  border-radius: 10px;
-  box-shadow: 0.5px 0.5px 50px rgba(0, 0, 0, 0.452);
-}
-
-.cans img:hover {
-  box-shadow: 0.5px 0.5px 50px orange;
-  cursor: pointer;
-  scale: 0.9;
-  transition: 1.5s;
-}
-
-.cans a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.cans a:hover {
-  color: orange;
-  transition: 1.5s;
-}
-
-.can1 {
-  background-color: whitesmoke;
-  padding: 0rem 1rem;
-  height: 460px;
-  border-radius: 15px;
-}
-
-.can2 {
-  background-color: whitesmoke;
-  padding: 0rem 1rem;
-  height: 460px;
-  border-radius: 15px;
-}
-
-.can3 {
-  background-color: whitesmoke;
-  padding: 0rem 1rem;
-  height: 460px;
-  border-radius: 15px;
 }
 
 @media (max-width: 700px) {
@@ -1626,88 +1532,4 @@ footer {
     justify-content: center;
   }
 
-  /* other shops */
-  #Can {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    background-color: rgba(255, 166, 0, 0.404);
-  }
-
-  .cans {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    font-family: Calibri;
-    padding-top: 3rem;
-    font-size: 1rem;
-    margin-top: 3.5rem;
-  }
-
-  #Can .lol {
-    text-align: center;
-    margin-top: 3.5rem;
-  }
-
-  .cans button {
-    margin-top: 0.5rem;
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid orange;
-    background-color: white;
-  }
-
-  .cans img {
-    width: 200px;
-    height: 280px;
-    margin-top: 1.3rem;
-    border-radius: 10px;
-    box-shadow: 0.5px 0.5px 50px rgba(0, 0, 0, 0.452);
-  }
-
-  .cans img:hover {
-    box-shadow: 0.5px 0.5px 50px orange;
-    cursor: pointer;
-    scale: 0.9;
-    transition: 1.5s;
-  }
-
-  .cans a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-
-  .cans a:hover {
-    color: orange;
-    transition: 1.5s;
-  }
-
-  .can1 {
-    background-color: whitesmoke;
-    padding: 0rem 0.5rem;
-    height: 355px;
-    border-radius: 15px;
-  }
-
-  .can2 {
-    background-color: whitesmoke;
-    padding: 0rem 0.5rem;
-    height: 355px;
-    border-radius: 15px;
-  }
-
-  .can3 {
-    background-color: whitesmoke;
-    padding: 0rem 0.5rem;
-    height: 355px;
-    border-radius: 15px;
-  }
 }
