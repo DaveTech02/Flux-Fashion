@@ -118,7 +118,7 @@ li {
 li :hover {
   text-decoration: underline;
   color: orange;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 .navbar ul {
@@ -143,6 +143,10 @@ li :hover {
 
 .navbar .Add {
   color: orange;
+}
+
+.Add:hover{
+  color: black;
 }
 
 /* Ending of section one */
@@ -758,7 +762,7 @@ footer {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 700px) {
   *,
   * ::after,
   *::before {
